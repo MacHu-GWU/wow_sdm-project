@@ -1,5 +1,9 @@
 # -*- coding: utf-8 -*-
 
+"""
+Wrath of the Lich King (WotLK) expansion module.
+"""
+
 from .model import SdmCharacter
 from .model import SdmMacroTypeEnum
 from .model import SdmMacro

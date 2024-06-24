@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 """
-这个模块的可以让你对 Account / Character 和 WTF 配置文件的模板进行排列组合, 然后一键将你的
+这个模块的可以让你对 Account / Character 和宏命令 Yaml 文件进行排列组合, 然后一键将你的
 配置文件应用到你的客户端中的 WTF 目录下.
 """
 
@@ -163,8 +163,9 @@ class SdmMapping:
     @logger.emoji_block(msg="{func_name}", emoji="🎮")
     def apply(self, real_run: bool = False):
         """
-        将配置文件写入到 :meth:`Client.client_config`.
+        将 SDM 的 Lua 文件写入 ``SavedVariables`` 文件夹中.
         """
+        # mapper 是一个以 account 为 key 的分组器
         mapper: T.Dict[str, T.List[SdmMacro]] = dict()
 
         for acc_map in self.acc_macros:
@@ -176,10 +177,11 @@ class SdmMapping:
 
         for char_map in self.char_macros:
             macro = SdmMacro.from_yaml(char_map.file)
+            # 将其设定为 character macro
             macro.set_char(name=char_map.char.character, realm=char_map.char.realm_name)
             try:
                 mapper[char_map.char.account.wtf_account_name].append(macro)
-            except KeyError: # pragma: no cover
+            except KeyError:  # pragma: no cover
                 mapper[char_map.char.account.wtf_account_name] = [macro]
 
         for wtf_account_name, macros in mapper.items():

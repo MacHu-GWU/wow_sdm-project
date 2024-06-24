@@ -38,6 +38,16 @@ def to_module(
     dir_root: Path,
     import_dir_root_line: str,
 ):
+    """
+    扫描 ``dir_root`` 文件夹下的所有宏命令 yaml 文件, 生成一个 Python 模块的字符串.
+    这个模块包含了所有的宏命令 yaml 文件的枚举.
+
+    那么最终生成的 Python 模块请参考 :ref:`generate-wtf-config-enum-module` todo: fix this ref
+
+    :param dir_root: 宏命令 yaml 文件的根目录.
+    :param import_dir_root_line: 这一行要导入一个 dir_root 对象, 也就是我们扫描的
+        宏命令 yaml 文件的根目录. 用于里面的 enum 中的路径的拼接.
+    """
     lines = [
         "# -*- coding: utf-8 -*-",
         "",
