@@ -178,7 +178,7 @@ class SdmMapping:
         for char_map in self.char_macros:
             macro = SdmMacro.from_yaml(char_map.file)
             # 将其设定为 character macro
-            macro.set_char(name=char_map.char.character, realm=char_map.char.realm_name)
+            macro.set_char(name=char_map.char.titled_character_name, realm=char_map.char.realm_name)
             try:
                 mapper[char_map.char.account.wtf_account_name].append(macro)
             except KeyError:  # pragma: no cover
