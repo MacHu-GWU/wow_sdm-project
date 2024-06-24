@@ -8,15 +8,12 @@
 import typing as T
 import dataclasses
 from pathlib_mate import Path
-from functools import cached_property
 
-from jinja2 import Template
 from wow_acc.api import Account, Character
 
 from ..logger import logger
-from ..utils import apply
 
-from .model import SdmCharacter, SdmMacroTypeEnum, SdmMacro, SdmLua
+from .model import SdmMacro, SdmLua
 
 
 @dataclasses.dataclass
@@ -60,13 +57,6 @@ class BaseMapping:
     """
 
     file: Path = dataclasses.field()
-
-    @cached_property
-    def tpl(self) -> Template:
-        """
-        Jinja template 对象. 它会被缓存下来以便复用.
-        """
-        return Template(self.file.read_text(encoding="utf-8"))
 
 
 @dataclasses.dataclass
@@ -189,7 +179,7 @@ class SdmMapping:
             macro.set_char(name=char_map.char.character, realm=char_map.char.realm_name)
             try:
                 mapper[char_map.char.account.wtf_account_name].append(macro)
-            except KeyError:
+            except KeyError: # pragma: no cover
                 mapper[char_map.char.account.wtf_account_name] = [macro]
 
         for wtf_account_name, macros in mapper.items():

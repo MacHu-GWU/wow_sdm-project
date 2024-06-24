@@ -58,6 +58,7 @@ class MacroGroupEnum:
     acc_common = OrderedSet(acc_common)
 
     paladin_protect_retri = [
+        # Buff
         MacroEnum.f_02_paladin__1_protect_retri__11311_buff_self_alliance_zhCN,
         # Act
         MacroEnum.f_02_paladin__1_protect_retri__11301_act1_zhCN,
@@ -70,11 +71,9 @@ class MacroGroupEnum:
     paladin_protect_retri = OrderedSet(paladin_protect_retri)
 
     shaman_elemental_resto = [
-        # Buff
-        MacroEnum.f_00_common__2002_buff_caster_dps,
-        MacroEnum.f_00_common__2004_buff_healer,
-        MacroEnum.f_05_shaman__0_common__15101_consumable,
+        # Command
         MacroEnum.f_05_shaman__0_common__15102_interrupt_zhCN,
+        # Buff
         MacroEnum.f_05_shaman__1_elemental_resto__15311_buff_self_zhCN,
         # Act
         MacroEnum.f_05_shaman__0_common__15111_elemental_rotation_lv60_zhCN,

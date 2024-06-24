@@ -107,7 +107,7 @@ class SdmMacro:
         """
         Is this SDM macro a global macro or character macro
         """
-        if self.character is None:
+        if self.character is None:  # pragma: no cover
             return True
         elif (self.character.name is None) or (self.character.realm is None):
             return True
@@ -203,19 +203,19 @@ class SdmLua:
         self.check_path_lua()
         self.check_macros()
 
-    def check_path_lua(self):  # pragma: no cover
+    def check_path_lua(self):
         """
         检查 :attr:`SdmLua.path_lua` 是否是 SuperDupeMacro.lua 文件.
         """
-        if self.path_lua.basename != "SuperDuperMacro.lua":
+        if self.path_lua.basename != "SuperDuperMacro.lua":  # pragma: no cover
             raise ValueError(f"the SDMLua.path_lua has to end with SuperDupeMacro.lua!")
 
-    def check_macros(self):  # pragma: no cover
+    def check_macros(self):
         """
         检查 :attr:`SdmLua.macros` 中是否有重复的 macro id.
         """
         id_set = {macro.id for macro in self.macros}
-        if len(id_set) != len(self.macros):
+        if len(id_set) != len(self.macros):  # pragma: no cover
             macro_id_list = [macro.id for macro in self.macros]
             raise ValueError(
                 f"Cannot render SDM lua! Found duplicate id in 'macro_list': {macro_id_list}"
