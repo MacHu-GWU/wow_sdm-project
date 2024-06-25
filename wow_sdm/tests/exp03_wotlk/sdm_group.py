@@ -72,14 +72,14 @@ class MacroGroupEnum:
 
     shaman_elemental_resto = [
         # Command
-        MacroEnum.f_05_shaman__0_common__15102_interrupt_zhCN,
+        MacroEnum.f_05_shaman__0_common__14102_interrupt_zhCN,
         # Buff
-        MacroEnum.f_05_shaman__1_elemental_resto__15311_buff_self_zhCN,
+        MacroEnum.f_05_shaman__1_elemental_resto__14311_buff_self_zhCN,
         # Act
-        MacroEnum.f_05_shaman__0_common__15111_elemental_rotation_lv60_zhCN,
-        MacroEnum.f_05_shaman__0_common__15112_resto_rotation_zhCN,
-        MacroEnum.f_05_shaman__0_common__15114_mb_resto_earth_shield_zhCN,
-        MacroEnum.f_05_shaman__1_elemental_resto__15312_burst_zhCN,
+        MacroEnum.f_05_shaman__0_common__14111_elemental_rotation_lv60_zhCN,
+        MacroEnum.f_05_shaman__0_common__14112_resto_rotation_zhCN,
+        MacroEnum.f_05_shaman__0_common__14114_mb_resto_earth_shield_zhCN,
+        MacroEnum.f_05_shaman__1_elemental_resto__14312_burst_zhCN,
     ]
     shaman_elemental_resto = OrderedSet(shaman_elemental_resto)
 

@@ -53,6 +53,10 @@ Welcome to ``wow_sdm`` Documentation
 .. image:: https://wow-sdm.readthedocs.io/en/latest/_static/wow_sdm-logo.png
     :target: https://wow-sdm.readthedocs.io/en/latest/
 
+Manager your World of Warcraft macros configuration at scale.
+
+这是一个强大的魔兽世界的宏命令管理工具.
+
 
 .. _install:
 

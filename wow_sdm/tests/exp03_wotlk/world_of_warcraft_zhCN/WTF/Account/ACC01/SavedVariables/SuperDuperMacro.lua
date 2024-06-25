@@ -270,7 +270,7 @@ sdm_macros = {
         ["type"] = "b",
         ["name"] = "Buff-Self",
         ["character"] = {
-            ["name"] = "mypaladin",
+            ["name"] = "Mypaladin",
             ["realm"] = "realm1",
         },
         ["ID"] = 11311,
@@ -281,7 +281,7 @@ sdm_macros = {
         ["type"] = "b",
         ["name"] = "Act1",
         ["character"] = {
-            ["name"] = "mypaladin",
+            ["name"] = "Mypaladin",
             ["realm"] = "realm1",
         },
         ["ID"] = 11301,
@@ -292,7 +292,7 @@ sdm_macros = {
         ["type"] = "b",
         ["name"] = "Act2",
         ["character"] = {
-            ["name"] = "mypaladin",
+            ["name"] = "Mypaladin",
             ["realm"] = "realm1",
         },
         ["ID"] = 11302,
@@ -303,7 +303,7 @@ sdm_macros = {
         ["type"] = "b",
         ["name"] = "Act3",
         ["character"] = {
-            ["name"] = "mypaladin",
+            ["name"] = "Mypaladin",
             ["realm"] = "realm1",
         },
         ["ID"] = 11303,
@@ -314,7 +314,7 @@ sdm_macros = {
         ["type"] = "b",
         ["name"] = "Act4",
         ["character"] = {
-            ["name"] = "mypaladin",
+            ["name"] = "Mypaladin",
             ["realm"] = "realm1",
         },
         ["ID"] = 11304,
@@ -325,7 +325,7 @@ sdm_macros = {
         ["type"] = "b",
         ["name"] = "Rotation",
         ["character"] = {
-            ["name"] = "mypaladin",
+            ["name"] = "Mypaladin",
             ["realm"] = "realm1",
         },
         ["ID"] = 11131,
@@ -336,7 +336,7 @@ sdm_macros = {
         ["type"] = "b",
         ["name"] = "Rotation",
         ["character"] = {
-            ["name"] = "mypaladin",
+            ["name"] = "Mypaladin",
             ["realm"] = "realm1",
         },
         ["ID"] = 11132,

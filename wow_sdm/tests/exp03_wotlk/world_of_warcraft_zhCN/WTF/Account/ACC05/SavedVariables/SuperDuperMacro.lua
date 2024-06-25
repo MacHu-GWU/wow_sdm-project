@@ -269,7 +269,7 @@ sdm_macros = {
         ["type"] = "b",
         ["name"] = "Interrupt",
         ["character"] = {
-            ["name"] = "myshaman4",
+            ["name"] = "Myshaman4",
             ["realm"] = "realm1",
         },
         ["ID"] = 15102,
@@ -280,7 +280,7 @@ sdm_macros = {
         ["type"] = "b",
         ["name"] = "Buff-Self",
         ["character"] = {
-            ["name"] = "myshaman4",
+            ["name"] = "Myshaman4",
             ["realm"] = "realm1",
         },
         ["ID"] = 15311,
@@ -291,7 +291,7 @@ sdm_macros = {
         ["type"] = "b",
         ["name"] = "Elemental-Rotate",
         ["character"] = {
-            ["name"] = "myshaman4",
+            ["name"] = "Myshaman4",
             ["realm"] = "realm1",
         },
         ["ID"] = 15111,
@@ -302,7 +302,7 @@ sdm_macros = {
         ["type"] = "b",
         ["name"] = "Resto-Rotate",
         ["character"] = {
-            ["name"] = "myshaman4",
+            ["name"] = "Myshaman4",
             ["realm"] = "realm1",
         },
         ["ID"] = 15112,
@@ -313,7 +313,7 @@ sdm_macros = {
         ["type"] = "b",
         ["name"] = "MB-Retro-Earth-Shield",
         ["character"] = {
-            ["name"] = "myshaman4",
+            ["name"] = "Myshaman4",
             ["realm"] = "realm1",
         },
         ["ID"] = 15114,
@@ -324,7 +324,7 @@ sdm_macros = {
         ["type"] = "b",
         ["name"] = "Burst",
         ["character"] = {
-            ["name"] = "myshaman4",
+            ["name"] = "Myshaman4",
             ["realm"] = "realm1",
         },
         ["ID"] = 15312,

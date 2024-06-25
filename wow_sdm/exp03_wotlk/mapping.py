@@ -19,8 +19,8 @@ from .model import SdmMacro, SdmLua
 @dataclasses.dataclass
 class Client:
     r"""
-    代表着一个具体魔兽世界客户端. 你必须要制定这个客户端的目录. 然后就可以用各种 method 来
-    获取对应的 WTF 配置文件的绝对路径了.
+    代表着一个具体魔兽世界客户端. 你必须要指定这个客户端的目录. 然后就可以用各种 method 来
+    获取对应的 SDM 插件 lua 文件的绝对路径了.
 
     :param dir: 客户端目录, 根据此目录可以定位其他的目录. 例如 "C:\Program Files\World of Warcraft"
     :param locale: 客户端语种, 例如 enUS, zhCN, zhTW 等.
