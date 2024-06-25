@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from .sdm_dataset import dir_root
+from wow_sdm.tests.exp03_wotlk.sdm_dataset import dir_root
 
 # fmt: off
 class MacroEnum:

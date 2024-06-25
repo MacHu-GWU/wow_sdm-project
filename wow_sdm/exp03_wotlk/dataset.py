@@ -65,7 +65,7 @@ def to_module(
             # make sure the macro id in file name match the yaml data
             macro = SdmMacro.from_yaml(path)
             parts = path.fname.split("-", 1)
-            if str(macro.id) != parts[0]:
+            if str(macro.id) != parts[0]:  # pragma: no cover
                 raise ValueError(f"Macro Id doesn't match file name in {path}")
             # figure out the variable name
             var_name = get_var_name(dir_root, path)
