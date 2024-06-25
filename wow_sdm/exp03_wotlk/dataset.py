@@ -6,6 +6,8 @@
 
 from pathlib_mate import Path
 
+from .model import SdmMacro
+
 
 def slugify(s: str) -> str:
     """
@@ -60,6 +62,12 @@ def to_module(
     paths = list(Path.sort_by_abspath(dir_root.select_by_ext(".yml")))
     if len(paths):
         for path in paths:
+            # make sure the macro id in file name match the yaml data
+            macro = SdmMacro.from_yaml(path)
+            parts = path.fname.split("-", 1)
+            if str(macro.id) != parts[0]:
+                raise ValueError(f"Macro Id doesn't match file name in {path}")
+            # figure out the variable name
             var_name = get_var_name(dir_root, path)
             relpath = path.relative_to(dir_root)
             joinpath_arg = ", ".join([f'"{part}"' for part in relpath.parts])

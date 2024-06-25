@@ -36,7 +36,7 @@ How This Project Solve the Problem
 ------------------------------------------------------------------------------
 到这里我们的完整解决方案就呼之欲出了. 我们可以把游戏中的宏命令用 SDM 插件管理. 而我们这个软件只是提供了一套方便于人类管理大量宏命令的框架, 允许人类用文件夹层级结构 + YAML 来管理宏命令的内容. 然后只需要用配置文件来制定每个游戏角色在游戏中要用哪些宏命令既可. 这个软件最终会根据你的配置生成最终的 ``.lua`` 文件, 然后登录游戏后 SDM 会自动将这些宏命令同步到服务器端.
 
-举例来说, :class:`~wow_sdm.exp03_wotlk.model.SdmMacro` 类代表着一个宏命令. 你可以用 :meth:`SdmMacro.from_yaml <wow_sdm.exp03_wotlk.model.SdmMacro.from_yaml>` 方法来从 YAML 文件中读取宏命令的数据. 下面是一个宏命令的 YAML 文件的例子.
+举例来说, :class:`~wow_sdm.exp03_wotlk.model.SdmMacro` 类代表着一个宏命令. 你可以用 :meth:`SdmMacro.from_yaml <wow_sdm.exp03_wotlk.model.SdmMacro.from_yaml>` 方法来从 YAML 文件中读取宏命令的数据. 下面是一个宏命令的 YAML 文件的例子. 可以看到, 里面定义了宏命令的内容, 还有 description, 并且你可以任意插入注释.
 
 .. dropdown:: 02-paladin/1-protect-retri/11305-rotation-zhCN.yml
 
